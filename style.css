@@ -1,0 +1,213 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif, Arial, Helvetica;
+}
+
+ul li a {
+    text-decoration: none;
+}
+
+/* HEADER */
+:root {
+    --blue: #1e2d70;
+    --white: #fff;
+}
+header {
+    background-color: var(--blue);
+    height: 100px;
+    align-items: center;
+    display: flex;
+}
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    color: var(--white);
+    padding: 0 50px;
+    margin: auto;
+
+    width: 100%;
+    max-width: 992px;
+}
+.nav-container a{
+    color: var(--white);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.nav-container ul{
+    width: 400px;
+    list-style: none;
+    display: flex;
+    justify-content: space-around ;
+    align-items: center;
+}
+
+/* CONTAINER */
+.container {
+    max-width: 1000px;
+    display: flex;
+    justify-content: space-between ;
+    align-items: center;
+    margin: auto;
+    padding: 10px;
+
+    height: 80vh;
+}
+.section-1{
+    color: black;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+.section-1 h1{
+    color: var(--blue);
+    margin-bottom: 10px;
+    font-size: 40px;
+}
+.section-1 a{
+    background-color: var(--blue);
+    color: var(--white);
+    border-radius: 30px;
+    padding: 10px;
+    margin-top: 20px;
+    width: 90px;
+    text-decoration: none;
+}
+
+/* CONTAINER QUEM SOMOS */
+/* reutilizei o .container */
+.quem-somos {   
+    margin: 10px;
+}
+.quem-somos-descricao {
+    width: 600px;
+    padding: 10px;
+    text-align: justify;
+}
+.quem-somos-descricao h2, .quem-somos-descricao p{
+    padding: 10px;
+}
+.quem-somos-descricao h2 {
+    color: var(--blue);
+    border-left: 4px solid var(--blue);
+    margin-left: 10px;
+    font-size: 40px;
+}
+
+/* SERVIÇOS */
+.section-servicos {
+    background-color: var(--blue);
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between ;
+    align-items: center;
+
+    height: 80vh;
+}
+.section-servicos h2 {
+    color: var(--white);
+    margin-top: 50px;
+    font-size: 40px;
+}
+.servicos {
+    width: 1000px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px; 
+    font-weight: 600;
+}
+.servicos-item {
+    margin: auto;
+    display: block;
+    text-align: center;
+}
+.servicos a {
+    text-decoration: none;
+    color: var(--blue);
+    background-color: var(--white);
+    border-radius: 30px;
+}
+.servicos a, .servicos p {
+    padding: 15px;
+    margin: 10px 0;
+}
+
+/* PLANOS */
+.container-plano {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    max-width: 1000px;
+    height: 80vh;
+}
+.container-plano h2{   
+    color: var(--blue);
+    font-size: 40px;
+    margin-top: 50px;
+    margin-left: 50px;
+}
+.list-planos {
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: end;
+    width: 90%;
+}
+.list-planos ul, .list-planos a{
+    list-style: none;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.list-planos ul li {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    padding: 5px;
+}
+.list-planos ul li::before {
+    content: '';
+    width: 10px;
+    height: 10px;
+    background-color: var(--blue);
+    margin-right: 5px;
+}
+.btn {
+    background-color: var(--blue);
+    color: var(--white);
+    display: block;
+    width: 100px;
+    margin: auto;
+    margin-bottom: 20px;
+    border-radius: 30px;
+    text-align: center;
+}
+.item-planos h3 {
+    color: var(--blue);
+    font-size: 24px;
+    border-bottom: 2px solid var(--blue);
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.item-planos {
+    border: 2px solid var(--blue);
+    flex: 1;
+    padding: 10px;
+    margin-right: 10px;
+}
+
+footer {
+    background-color: var(--blue);
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#rodape{
+    color: var(--white);
+    margin: auto;
+    text-align: center;
+}
